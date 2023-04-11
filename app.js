@@ -25,7 +25,7 @@ let vm = Vue.createApp({
             this.loading_status = true
             console.log(this.loading_status);
             let data = { 'singleWebsite': this.searchInput}
-            let url = 'http://localhost:3000/singleweb'
+            let url = 'https://pulse-backend-i6to.onrender.com/singleweb'
             await fetch( url, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json'},
