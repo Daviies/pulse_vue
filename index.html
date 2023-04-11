@@ -47,7 +47,7 @@
         <div v-else-if="show_page == 1" class="bg search_page">
             <p class="privacy_pulse_title">privacy pulse</p>
             <div class="search_container">
-                <input type="url" v-model="searchInput" @keyup.enter="requestSingleWebCookies" class="search_input" placeholder="type in the website url" required />
+                <input type="url" v-model="searchInput" @keyup.enter="requestSingleWebCookies" class="search_input" placeholder="enter website url: https://www..." required />
                 <button class="search_button button" @click="requestSingleWebCookies" :disabled="!disable_button">Audit</button>
             </div>
             <div class="home_button button" @click="goHome">Back to Home</div>
